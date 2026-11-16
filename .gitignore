@@ -1,0 +1,11 @@
+# Upstream Hugging Face LeRobot clone (install separately, see README)
+lerobot/
+
+# Runtime data from robot sessions
+bridge/
+outputs/
+
+# OS / Python junk
+.DS_Store
+__pycache__/
+*.pyc
