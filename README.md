@@ -23,11 +23,20 @@ Battery-sorting robot arm built at DubHacks '26 with an SO-101 follower arm, a s
 | `claude_bridge.py` | A file-based bridge that lets an AI agent drive the arm with safe, whitelisted commands (move, gripper, snapshot). It uses smooth interpolation, speed caps and joint-limit clamping. |
 | `skills/so101-pick-place/` | Instructions and inverse-kinematics helpers for picking up AA batteries and dropping them in a box using direct control. |
 
+
+## My role
+- Recorded teleoperated demonstrations with LeRobot (side + wrist cameras) and fine-tuned Perceptron's Isaac 0.5 VLA on them
+- Built the 30 Hz inference client (`run.py`) that streams both camera feeds and joint positions to the deployed policy and executes the returned 6-joint action chunks
+- Added real-time chunking and joint-speed safety limits
+
+  
 ## Setup
 
 ```bash
+git clone https://github.com/Sparkaide/battery-catcher.git
+cd battery-catcher
 git clone https://github.com/huggingface/lerobot.git
-cd lerobot && pip install -e ".[feetech]"
+pip install -e "./lerobot[feetech]"
 export TEAM_API_KEY=...   # Perceptron team key; never commit it
 python run.py --deployment dep_xxx --dry-run
 ```
