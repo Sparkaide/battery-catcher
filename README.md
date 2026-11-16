@@ -1,4 +1,4 @@
-# trash-robot
+# Battery Catcher
 
 Battery-sorting robot arm built at DubHacks '26 with an SO-101 follower arm, a side camera and a wrist camera. Code for the Battery Catcher project.
 
