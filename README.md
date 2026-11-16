@@ -1,6 +1,18 @@
-# Battery Catcher
 
-Battery-sorting robot arm built at DubHacks '26 with an SO-101 follower arm, a side camera and a wrist camera. Code for the Battery Catcher project.
+# Battery Catcher
+Battery-sorting robot arm built at DubHacks '26 with an SO-101 follower arm, a side camera and a wrist camera.
+
+<p align="center">
+  <img width="600" alt="Teleoperation demo" src="https://github.com/user-attachments/assets/088da4cc-9af4-4d11-8d19-646a16ce3f13" />
+  <br />
+  <sub>Collecting training demonstrations: an operator drives the leader arm (left) while the SO-101 follower (right) mirrors it.</sub>
+</p>
+
+<p align="center">
+  <img width="600" alt="Battery Catcher setup" src="https://github.com/user-attachments/assets/a72616cf-2059-445d-a74c-34c1bf2fc8c7" />
+  <br />
+  <sub>Rerun showing a recorded teleoperation episode: front + wrist camera feeds and joint positions.</sub>
+</p>
 
 ## What's here
 
